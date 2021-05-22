@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main class="main">
+      <header class="header">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description" class="intro">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <section class="formsection">
+        <form id="survey-form" class="surveyform" action="">
+          <div class="formitem">
+            <label id="name-label" class="formitemlabel" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="formcontrol formtextcontrol"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="formitem">
+            <label id="email-label" class="formitemlabel" for="email"
+              >Email</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="formcontrol formtextcontrol"
+              placeholder="Enter you Email"
+              required
+            />
+          </div>
+          <div class="formitem">
+            <label id="number-label" class="formitemlabel" for="age"
+              >Age (<span class="labelhelp">optional</span>)</label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              class="formcontrol formtextcontrol"
+              placeholder="Age"
+              min="16"
+              max="99"
+            />
+          </div>
+          <div class="formitem">
+            <label class="formitemlabel" for="dropdown"
+              >Which option best describes your current role?</label
+            >
+            <select
+              class="formcontrol formselectcontrol"
+              name="currentrole"
+              id="dropdown"
+            >
+              <option value="def" disabled selected>Select current role</option>
+              <option value="student">Student</option>
+              <option value="fulltime">Full Time Job</option>
+              <option value="fulltimelearner">Full Time Learner</option>
+              <option value="noanswer">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="formitem">
+            <label class="formitemlabel"
+              >Would you recommend freeCodeCamp to a friend?</label
+            >
+            <label class="radioitemlabel" for="definitely">
+              <input
+                class="radioitem"
+                type="radio"
+                name="recommend"
+                id="definitely"
+                value="definitely"
+              />
+              Definitely</label
+            >
+            <label class="radioitemlabel" for="maybe">
+              <input
+                class="radioitem"
+                type="radio"
+                name="recommend"
+                id="maybe"
+                value="maybe"
+              />
+              Maybe</label
+            >
+            <label class="radioitemlabel" for="notsure">
+              <input
+                class="radioitem"
+                type="radio"
+                name="recommend"
+                id="notsure"
+                value="notsure"
+              />
+              Not sure</label
+            >
+          </div>
+          <div class="formitem">
+            <label class="formitemlabel"
+              >What would you like to see improved? (<span class="labelhelp"
+                >Check all that apply</span
+              >)</label
+            >
+            <label class="radioitemlabel" for="frontend">
+              <input
+                class="radioitem"
+                type="checkbox"
+                name="frontend"
+                id="frontend"
+                value="frontend"
+              />
+              Front-end Projects
+            </label>
+            <label class="radioitemlabel" for="backend">
+              <input
+                class="radioitem"
+                type="checkbox"
+                name="backend"
+                id="backend"
+                value="backend"
+              />
+              Back-end Projects
+            </label>
+            <label class="radioitemlabel" for="datavisualisation">
+              <input
+                class="radioitem"
+                type="checkbox"
+                name="datavisualisation"
+                id="datavisualisation"
+                value="datavisualisation"
+              />
+              Data Visualisation
+            </label>
+            <label class="radioitemlabel" for="challenges">
+              <input
+                class="radioitem"
+                type="checkbox"
+                name="challenges"
+                id="challenges"
+                value="challenges"
+              />
+              Challenges
+            </label>
+            <label class="radioitemlabel" for="opensource">
+              <input
+                class="radioitem"
+                type="checkbox"
+                name="opensource"
+                id="opensource"
+                value="opensource"
+              />
+              Open Source Community
+            </label>
+            <label class="radioitemlabel" for="gitter">
+              <input
+                class="radioitem"
+                type="checkbox"
+                name="gitter"
+                id="gitter"
+                value="gitter"
+              />
+              Gitter help rooms
+            </label>
+            <label class="radioitemlabel" for="videos">
+              <input
+                class="radioitem"
+                type="checkbox"
+                name="videos"
+                id="videos"
+                value="videos"
+              />
+              Videos
+            </label>
+            <label class="radioitemlabel" for="citymeetups">
+              <input
+                class="radioitem"
+                type="checkbox"
+                name="citymeetups"
+                id="citymeetups"
+                value="citymeetups"
+              />
+              City Meetups
+            </label>
+            <label class="radioitemlabel" for="wiki">
+              <input
+                class="radioitem"
+                type="checkbox"
+                name="wiki"
+                id="wiki"
+                value="wiki"
+              />
+              Wiki
+            </label>
+            <label class="radioitemlabel" for="forum">
+              <input
+                class="radioitem"
+                type="checkbox"
+                name="forum"
+                id="forum"
+                value="forum"
+              />
+              Forum
+            </label>
+            <label class="radioitemlabel" for="additionalcourses">
+              <input
+                class="radioitem"
+                type="checkbox"
+                name="additionalcourses"
+                id="additionalcourses"
+                value="additionalcourses"
+              />
+              Additional Courses
+            </label>
+          </div>
+          <div class="formitem">
+            <label class="formitemlabel" for="comments"
+              >Any comments or suggestions?</label
+            >
+            <textarea
+              class="textarea"
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="30"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+          <div class="formitem">
+            <button id="submit" class="submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
